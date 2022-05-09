@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  dp-postgres:
+    image: postgres:latest
+    environment:
+      - "TZ=Europe/Amsterdam"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=root"
+      - "POSTGRES_DB=dpdb"
+    ports:
+      - 45432:5432
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+
+volumes:
+  ivy2:
+    driver_opts:
+      o: bind
+      type: none
+      device: $HOME/.ivy2
+  sbt:
+    driver_opts:
+      o: bind
+      type: none
+      device: $HOME/.sbt

@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/javierpc/Projects/seed/app/globals/Module.scala:7:7: Pattern definition introduces Unit-valued member of Module; consider wrapping it in `locally { ... }`.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  val _ = environment[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
