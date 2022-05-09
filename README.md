@@ -1,0 +1,2 @@
+# seed
+Scala seed project.
